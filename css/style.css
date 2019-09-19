@@ -1,0 +1,169 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1.3em;
+	background-image: url('../img/Achtergrondplaat.jpg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h1{
+	text-align: center;
+	font-size: 3.5em;
+	color: rgb(67,89,159);
+	text-shadow: 4px 4px 1px black;
+	background-color: rgba(256,256,256,0.7);
+	padding: 2rem 0;
+	margin:  2rem 0;
+}
+
+h2{
+	font-size: 1.7rem;
+}
+
+p{
+ font-size: 1rem;
+}
+
+section{
+	margin: 0 4vw 2rem 4vw;
+}
+
+header{
+	/*background-image: url(https://bolblogsrackspace-axaxzmkc.netdna-ssl.com/thuis/prod/images/_2560xAUTO_crop_center-center_85_none/Heel-Holland-Bakt-Header-Thuis-Magazine.jpg);*/
+	/*min-height: 5em;*/
+	/*height: 13vw;*/
+	/*background-position: top;*/
+	/*background-size: cover;*/
+	/*background-repeat: no-repeat;*/
+	padding: 1vw;
+}
+
+/* Navigatie */
+nav img{
+	min-height: 3.2em;
+	height: 11vw;
+}
+
+nav img:hover{
+	filter: grayscale(100%);
+}
+
+nav a{
+	text-decoration: none;
+	font-size: 1.9vw;
+	font-weight: 500;
+	color: white;
+}
+
+nav li a:hover{
+	color: rgb(67,89,159);
+	border-bottom: 0.1em solid rgb(67,89,159);
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+nav li{
+	padding-left: 2vw;
+}
+
+.zoek{
+	margin-left: auto;
+}
+
+nav input[type=search] {
+  border: none;
+  padding: 0.3em;
+  font-size: 2vw;
+  width: 18vw;
+  border-radius: 7px 0 0 7px ;
+}
+
+nav button{
+  background-color:rgb(67,89,159);
+  border: none;
+  color: white;
+  padding: 0.3em;
+  font-size: 1.9vw;
+  border-radius: 0 7px 7px 0;
+}
+
+nav button:hover{
+	background-color: rgb(50,50,50);
+}
+
+/* Einde navigatie*/
+
+/* Recepten overzicht*/
+.recepten{
+	display: grid;
+ 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  	grid-gap: 2rem;
+}
+
+.inhoud{
+	margin: 1rem 2rem;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.recept{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.video {
+	grid-column-start: span 2;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+
+.recept img{
+	object-fit: cover;
+	height: 300px;
+}
+
+.video img{
+	object-fit: cover;
+	width: 35vw;
+}
+
+.recepten button{
+	background-color: rgb(67,89,159);
+  	border: none;
+  	border-radius: 7px;
+  	color: white;
+  	padding: 0.5rem;
+  	font-size: 1rem;
+  	font-weight: 700;
+  	align-self: flex-end;
+}
+
+.recepten button:hover{
+	background-color: rgb(50,50,50);
+}
+/* Einde Recepten overzicht*/
+
+@media (max-width: 795px) {
+  .video {
+    grid-column-start: span 1;
+  }
+}
+
