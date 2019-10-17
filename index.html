@@ -7,28 +7,87 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500&display=swap" rel="stylesheet">
 	</head>
-	<body>
+
+	<body class="receptenpagina">
 		<header>
 			<nav>
+				<a href="home.html"><img src="img/logo.png"></a>
 				<ul>
-					<a href=""><img src="img/logo.jpeg"></a>
-					<li><a href="">RECEPTEN</a></li>
+					<li><a href="index.html">RECEPTEN</a></li>
 					<li><a href="">BAK-INFO</a></li>
 					<li><a href="">UITZENDINGEN</a></li>
 					<li><a href="">KANDIDATEN</a></li>
-					<li><a href="">OVER</a></li>
-					<div class="zoek">
-						<input type="search" name="zoeken"><button>Zoek</button>
-					</div>
+					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
+
 		<main>
 			<section>
 				<h1>Recepten</h1>
+
+				<h2 class="h2f">Filters</h2>
+
+				<form class="filters">
+					<fieldset>
+						<legend>Soort recept</legend>
+							<label for="taart">
+								<input type="checkbox" name="taart" id="taart">
+								Taart
+							</label>
+							<label for="cake">
+								<input type="checkbox" name="cake" id="cake">
+								Cake
+							</label>
+							<label for="hartig">
+								<input type="checkbox" name="hartig" id="hartig">
+								Hartig
+							</label>
+							<label for="brood">
+								<input type="checkbox" name="brood" id="brood">
+								Brood
+							</label>
+							<label for="koekjes">
+								<input type="checkbox" name="koekjes" id="koekjes">
+								Koekjes
+							</label>
+						<legend>Moeilijkheidsgraad</legend>
+							<label for="makkelijk">
+								<input type="checkbox" name="makkelijk" id="makkelijk">
+								Makkelijk
+							</label>
+							<label for="goedtedoen">
+								<input type="checkbox" name="goedtedoen" id="goedtedoen">
+								Goed te doen
+							</label>
+							<label for="moeilijk">
+								<input type="checkbox" name="moeilijk" id="moeilijk">
+								Moeilijk
+							</label>
+							<label for="gevorderd">
+								<input type="checkbox" name="gevorderd" id="gevorderd">
+								Gevorderd
+							</label>
+							<button>Filter</button>
+					</fieldset>
+					
+				</form>
+
+				<div class="zoek">
+						<input type="search" name="zoeken"><button>Zoek</button>
+				</div>
 				<div class="recepten">
 					<article class="recept">
-						<img src="img/tiramisu-anna.jpg">
+						<div class="flipcontainer">
+						<div class="kaart">
+							<div class="voor">
+								<img src="img/tiramisu-anna.jpg">
+							</div>
+							<div class="achter">
+								<img src="img/anna.jpeg">
+							</div>
+						</div>
+						</div>
 						<div class="inhoud">
 							<h2>Tiramisu van Anna</h2>
 							<p>Voor haar befaamde tiramisu bakt Anna zelfs de lange vingers zelf, maar die kun je natuurlijk ook gewoon kopen. Bekijk het recept in de Heel Holland Bakt-app!</p>
@@ -36,7 +95,16 @@
 						</div>
 					</article>
 					<article class="recept">
-						<img src="img/bramentaart.jpg">
+						<div class="flipcontainer">
+						<div class="kaart">
+							<div class="voor">
+								<img src="img/bramentaart.jpg">
+							</div>
+							<div class="achter">
+								<img src="img/maroeska.jpg">
+							</div>
+						</div>
+						</div>
 						<div class="inhoud">
 							<h2>Zaanse Bramentaart</h2>
 							<p>Een Zaanse variant op de klassieke Schwarzwälder kirsch. Boordevol bramen en een vleugje likeur.</p>
@@ -44,7 +112,16 @@
 						</div>
 					</article>
 					<article class="recept">
-						<img src="img/zonnebloem.jpg">
+						<div class="flipcontainer">
+						<div class="kaart">
+							<div class="voor">
+								<img src="img/zonnebloem.jpg">
+							</div>
+							<div class="achter">
+								<img src="img/anna.jpeg">
+							</div>
+						</div>
+						</div>
 						<div class="inhoud">
 							<h2>Zonnebloem van Gogh</h2>
 							<p>Deze zonnebloem-sterrennacht is niet alleen een prachtige taart, de heerlijke kokoslimoen en kardemomcake laten je echt versteld staan. Maar pas op; het is een echte ‘hap-slik-weg-taart’!</p>
@@ -52,7 +129,16 @@
 						</div>
 					</article>
 					<article class="recept">
-						<img src="img/tulpendroom.jpg">
+						<div class="flipcontainer">
+						<div class="kaart">
+							<div class="voor">
+								<img src="img/tulpendroom.jpg">
+							</div>
+							<div class="achter">
+								<img src="img/anna.jpeg">
+							</div>
+						</div>
+						</div>
 						<div class="inhoud">
 							<h2>Tulpendroom</h2>
 							<p>Met deze verbluffende taart wordt je plots wakker uit je droom als je ontdekt dat tulpen helemaal niet Nederlands zijn. Smaakt hij er daarom minder om? Zéker niet, het is een droom van een taart!</p>
@@ -64,9 +150,7 @@
 						<div class="inhoud">
 							<h2>Mozaïkkoekjes maken</h2>
 							<p>Ben jij ook een koekiemonster? Bak je eigen koekjes voor bij de thee!</p>
-					
-							<p>Om deze mozaïekkoekjes mooi te kleuren, is het belangrijk dat je het deeg goed koelt én dat je de cacao goed mengt.</p>
-
+							<p>Om deze mozaïekkoekjes mooi te kleuren, is het belangrijk dat je het deeg goedkoelt én dat je de cacao goed mengt.</p>
 							<p>Robèrt helpt je een handje, hij laat je zien hoe je ze maakt.</p>
 							<button>Bekijk het recept</button>
 						</div>
@@ -77,5 +161,6 @@
 		<footer>
 			
 		</footer>
+		<script src="js/script.js"></script>
 	</body>
 </html>
